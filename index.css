@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #777777;
+  font-family: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contentWrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu {
+  display: none;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  background: #ee7c0d;
+}
+
+.spanThree {
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.spanOne {
+  grid-column: span 1;
+}
+
+.articleImg {
+  height: 100%;
+  width: 360px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+.spanOne .articleImg {
+  height: auto;
+  width: 100%;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.authorImg {
+  width: 2.5rem;
+}
+
+.authorInfo {
+  font-size: 0.75rem;
+  list-style: none;
+}
+
+h2 {
+  color: black;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.textWrapper p {
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    position: absolute;
+    top: 6rem;
+    right: 50%;
+    transform: translateX(50%);
+    background: white;
+    width: 90%;
+    padding: 4rem;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 1.25em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex-direction: column;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .gridWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spanThree {
+    flex-direction: column;
+  }
+
+  .spanOne {
+    margin-bottom: 2rem;
+  }
+
+  .articleImg {
+    width: 100%;
+  }
+
+  .disNone {
+    display: none;
+  }
+}
+
+.header li:hover, .menu:hover {
+    cursor: pointer;
+}

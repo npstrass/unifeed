@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Unifeed</title>
+  </head>
+  <body>
+    <div class="contentWrapper">
+      <div class="header">
+        <img src="images/logo.svg" alt="logo unifeed" />
+        <img id="menu" class="menu" src="images/menu.svg" alt="menu" />
+        <ul id="nav" class="nav disNone">
+          <li>Home</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li class="btn">Subscribe</li>
+        </ul>
+      </div>
+
+      <div class="gridWrapper">
+        <div class="spanThree">
+          <img
+            class="articleImg"
+            src="images/mainArticleImg.png"
+            alt="images of apps on screen - focus on twitter"
+          />
+          <div class="textWrapper">
+            <h2>Weekly Newsletter: Tweets for Higher Engagements</h2>
+            <p>
+              In this weekly newsletter, we will be covering ten types of
+              engaging tweets. This is the guide if you're just starting out on
+              Twitter.
+            </p>
+            <div class="authorWrapper">
+              <img
+                class="authorImg"
+                src="images/avatarJessica.png"
+                alt="jessica profile image"
+              />
+              <ul class="authorInfo">
+                <li><strong>Jessica Andrews</strong></li>
+                <li>Content Manager</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="spanOne">
+          <img
+            class="articleImg"
+            src="images/article1.png"
+            alt="image of google search"
+          />
+          <div class="textWrapper">
+            <h2>7 Tips for Organic Traffic</h2>
+            <p>
+              From SEO to integrating with Paid Advertising, this article covers
+              it all.
+            </p>
+            <div class="authorWrapper">
+              <img
+                class="authorImg"
+                src="images/avatarSpencer.png"
+                alt="spencer profile image"
+              />
+              <ul class="authorInfo">
+                <li><strong>Spencer David</strong></li>
+                <li>SEO Specialist</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="spanOne">
+          <img
+            class="articleImg"
+            src="images/article2.png"
+            alt="image of computer with a coffee"
+          />
+          <div class="textWrapper">
+            <h2>How to Start Your Own Business</h2>
+            <p>Starting your own business in 2021 has never been easier.</p>
+            <div class="authorWrapper">
+              <img
+                class="authorImg"
+                src="images/avatarSara.png"
+                alt="Sara profile image"
+              />
+              <ul class="authorInfo">
+                <li><strong>Sara Frey</strong></li>
+                <li>Business Leader</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="spanOne">
+          <img
+            class="articleImg"
+            src="images/article3.png"
+            alt="image of items on a table"
+          />
+          <div class="textWrapper">
+            <h2>5 Tips for Better Branding</h2>
+            <p>
+              From SEO to integrating with Paid Advertising, this article covers
+              it all.
+            </p>
+            <div class="authorWrapper">
+              <img class="authorImg" src="images/avatarDavid.png" alt="" />
+              <ul class="authorInfo">
+                <li><strong>David Suns</strong></li>
+                <li>Brand Manager</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <img src="images/logo.svg" alt="unifeed logo" />
+        <p>Unifeed © 2017 All Copyrights Not Reserved</p>
+      </div>
+    </div>
+
+    <script>
+      const menu = document.getElementById("menu");
+      const nav = document.getElementById("nav");
+
+      menu.addEventListener("click", () => {
+        if (nav.classList.contains("disNone")) {
+          nav.classList.remove("disNone");
+        } else {
+          nav.classList.add("disNone");
+        }
+      });
+    </script>
+  </body>
+</html>
