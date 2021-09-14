@@ -158,6 +158,10 @@ strong {
     width: 100%;
   }
 
+  .footer {
+      flex-direction: column;
+  }
+
   .disNone {
     display: none;
   }
